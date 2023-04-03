@@ -13,11 +13,11 @@
 
     Method      Route                                     Functionality
 1.  GET     ->    http://127.0.0.1:5000/               ->   It's home route just for testing purpose
-2.  GET     ->    http://127.0.0.1:5000/todo/list      ->   This route is come back with a list of All the tasks
-3.  POST    ->    http://127.0.0.1:5000/todo/add       ->   This route is used to add a task into DB, You need to send a JSON Object from Postman with paramater name, description.
-4.  GET     ->    http://127.0.0.1:5000/todo/<taskId>   ->  This route is used to retrieve a task that have id = taskId pass as params by the route
-5.  PATCH   ->    http://127.0.0.1:5000/todo/update/<taskId> -> This route is used to update status of task 
-6.  DELETE  ->    http://127.0.0.1:5000/todo/delete/<taskId> -> This route is used to delete a task from Db that have id = taskId
+2.  GET     ->    http://127.0.0.1:5000/book/list      ->   This route is come back with a list of All the tasks
+3.  POST    ->    http://127.0.0.1:5000/book/add       ->   This route is used to add a book into DB, You need to send a JSON Object from Postman with paramater name, description.
+4.  GET     ->    http://127.0.0.1:5000/book/<BookId>   ->  This route is used to retrieve a book that have id = BookId pass as params by the route
+5.  PATCH   ->    http://127.0.0.1:5000/book/update/<bookId> -> This route is used to update status of Book
+6.  DELETE  ->    http://127.0.0.1:5000/book/delete/<bookId> -> This route is used to delete a task from Db that have id = BookId
 
 
 
@@ -26,4 +26,4 @@ My table structure:
 - id          -> Integer (Primary Key),
 * name        -> String,
 + desription  -> String,
-- done        -> Boolean
+- author      -> String
